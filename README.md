@@ -53,7 +53,7 @@ print (my_tree.children[2].children[0].data)
 
 ```
 
-And following is a full simple [Kivy](http://kivy.org) application. In this example we need to overwrite the `add_child()` method, as using the `children` field of Kivy widgets is not a good idea. Instead we use the `Widget.add_widget()` method.
+And following is a full simple [Kivy](http://kivy.org) application. In this example we need to overwrite the `add_child()` method, as using the `children` field of Kivy widgets directly is not a good idea. Instead we use the `Widget.add_widget()` method.
 
 ```python
 from kivy.app import App
