@@ -24,7 +24,7 @@ node('root',
  
  I got the idea of using with for this purpose when looking at the [Paint Tutorial](https://kivy.org/docs/tutorials/firstwidget.html) of [Kivy](kivy.org) (search `with self.canvas:`). I checked their source code to see how they did it, and extracted related code into this class.
  
- ## Usage
+## Usage
  
 Following is a full example of building a generic tree using with-tree-builder. 
 ```python
