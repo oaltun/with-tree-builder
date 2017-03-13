@@ -9,7 +9,7 @@ node('root',
     [node('child0'),
      node('child1'),
      node('child2',[
-        node('child3')]])
+        node('grand child')]])
 ```   
  With this:
  ```python
@@ -18,7 +18,7 @@ node('root',
     with node('child1'): pass
     with node('child2'):
         # Any python code...
-        with node('child3'): pass
+        with node('grand child'): pass
  ```   
  Much easier to write. Arguably easier to read. You can establish the parent-child relationships naturally, just like Python code. Allows getting references to tree nodes. Allows arbitrary Python code to be written between node additions. All Python: syntax checking, editor support, etc. are all already there.
  
