@@ -27,20 +27,3 @@ class WithTreeBuilder(object):
         Override this method if needed. See the KivyTreeBuilder for an example
         of this."""
         parent.children.append(child)
-
-
-class Node(object):
-    def __init__(self, data=None):
-        super(Node, self).__init__()
-        self.data = data
-        self.children = list()
-
-
-class KivyTreeBuilder(WithTreeBuilder):
-    def __init__(self):
-        super(KivyTreeBuilder, self).__init__()
-
-    def add_child(self, parent, child):
-        """Kivy widgets has a children field, too. But we do not want to use them.
-        Instead, we use the recommended 'add_widget' method."""
-        parent.add_widget(child)
