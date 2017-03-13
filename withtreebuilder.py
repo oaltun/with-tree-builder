@@ -1,6 +1,5 @@
 from contextlib import contextmanager
 
-
 class WithTreeBuilder(object):
     def __init__(self):
         self.stack = list()
