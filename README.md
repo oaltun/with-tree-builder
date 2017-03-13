@@ -18,9 +18,9 @@ node('root',
         # Any python code...
         with node('child3'): pass
  ```   
- Much easier to write and read. You can visualise the tree, just like Python code. Allows getting references to tree nodes. Allows arbitrary Python code to be written between node additions. And this is all Python, syntax checking, editor support, etc. are all already there.
+ Much easier to write and read. You can visualise the tree, just like Python code. Allows getting references to tree nodes. Allows arbitrary Python code to be written between node additions. And this is all Python: syntax checking, editor support, etc. are all already there.
  
-Following is a full example of building a generic tree using with-tree-builder:
+Following is a full example of building a generic tree using with-tree-builder. 
 ```python
 from withtreebuilder import WithTreeBuilder
 
@@ -53,7 +53,7 @@ print (my_tree.children[2].children[0].data)
 
 ```
 
-And following is a full simple Kivy application. Notice how a new 'add_child' is provided in KivyTreeBuilder class.
+And following is a full simple [Kivy](http://kivy.org) application. In this example we need to overwrite the `add_child()` method, as using the `children` field of Kivy widgets is not a good idea. Instead we use the `Widget.add_widget()` method.
 
 ```python
 from kivy.app import App
