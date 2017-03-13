@@ -20,9 +20,9 @@ node('root',
         # Any python code...
         with node('child3'): pass
  ```   
- Much easier to write and read. You can visualise the tree, just like Python code. Allows getting references to tree nodes. Allows arbitrary Python code to be written between node additions. And this is all Python: syntax checking, editor support, etc. are all already there.
+ Much easier to write. Arguably easier to read. You can establish the parent-child relationships naturally, just like Python code. Allows getting references to tree nodes. Allows arbitrary Python code to be written between node additions. All Python: syntax checking, editor support, etc. are all already there.
  
- I got the idea of using with for this purpose when looking at the [Paint Tutorial](https://kivy.org/docs/tutorials/firstwidget.html) of [Kivy](kivy.org) (search `with self.canvas:`). I checked their source code to see how they did it, and extracted related code into this class.
+ I got the idea of using `with` for this purpose while reading the [Paint Tutorial](https://kivy.org/docs/tutorials/firstwidget.html) of [Kivy](kivy.org) (search `with self.canvas:`). I checked their source code to see how they did it, and extracted related code into this class.
  
 ## Usage
  
