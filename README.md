@@ -1,5 +1,5 @@
 # with-tree-builder
-This small library demonstrates how trees can be built using Python's with keyword.
+This small library demonstrates how trees can be built using Python's `with` keyword.
 
 ## Idea
 
@@ -20,9 +20,9 @@ node('root',
         # Any python code...
         with node('grand child'): pass
  ```   
- Much easier to write. Arguably easier to read. You can establish the parent-child relationships naturally, just like Python code. Allows getting references to tree nodes. Allows arbitrary Python code to be written between node additions. All Python: syntax checking, editor support, etc. are all already there.
+ Second version is much easier to write. Arguably easier to read. You can establish the parent-child relationships naturally, just like Python code. Allows getting references to tree nodes. Allows arbitrary Python code to be written between node additions. All Python: syntax checking, editor support, etc. are all already there.
  
- I got the idea of using `with` for this purpose while reading the [Paint Tutorial](https://kivy.org/docs/tutorials/firstwidget.html) of [Kivy](kivy.org) (search `with self.canvas:`). I checked their source code to see how they did it, and extracted related code into this class.
+ I got the idea of using `with` for this purpose while reading the [Paint Tutorial](https://kivy.org/docs/tutorials/firstwidget.html) of [Kivy](kivy.org) (search `with self.canvas:`). I checked their source code to see how they did it, and wrote this class starting from that.
  
 ## Usage
  
